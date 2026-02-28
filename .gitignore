@@ -1,0 +1,16 @@
+.sf/
+.sfdx/
+.localdev/
+/IlluminatedCloud/
+/out/
+target/
+node_modules/
+/.illuminatedCloud/
+**/tsconfig*.json
+**/*.tsbuildinfo
+
+# MCP Server
+mcp-server/.env
+mcp-server/.venv/
+mcp-server/__pycache__/
+mcp-server/*.pyc

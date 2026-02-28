@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Open_Items</fullName>
+    <label>My Open Items</label>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Assigned_To__c</field>
+        <operation>equals</operation>
+        <value>$CurrentUser.Id</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Done</value>
+    </filters>
+    <columns>NAME</columns>
+    <columns>Project__c</columns>
+    <columns>Status__c</columns>
+    <columns>Priority__c</columns>
+    <columns>Type__c</columns>
+    <columns>Estimated_Hours__c</columns>
+    <columns>Due_Date__c</columns>
+</ListView>

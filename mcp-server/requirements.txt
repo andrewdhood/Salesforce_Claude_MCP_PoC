@@ -1,0 +1,5 @@
+mcp[cli]
+simple-salesforce
+pandas
+python-dotenv
+pydantic
